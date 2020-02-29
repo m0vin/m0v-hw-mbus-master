@@ -9,4 +9,6 @@
   (lib (name TestPoint)(type KiCad)(uri ${KISYSMOD}/TestPoint.pretty)(options "")(descr ""))
   (lib (name LED_SMD)(type KiCad)(uri ${KISYSMOD}/LED_SMD.pretty)(options "")(descr ""))
   (lib (name Fiducial)(type KiCad)(uri ${KISYSMOD}/Fiducial.pretty)(options "")(descr ""))
+  (lib (name sot23)(type KiCad)(uri ${KIPRJMOD}/sot23.pretty)(options "")(descr ""))
+  (lib (name SOT-23-Custom)(type KiCad)(uri ${KIPRJMOD}/SOT-23-Custom.pretty)(options "")(descr ""))
 )

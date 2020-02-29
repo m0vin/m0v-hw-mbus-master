@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:mbus_guru-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -135,7 +134,7 @@ U 1 1 5E11542A
 P 6300 2700
 F 0 "Q3" H 6490 2746 50  0000 L CNN
 F 1 "BCV71" H 6490 2655 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6500 2625 50  0001 L CIN
+F 2 "SOT-23-Custom:BCV71_SOT-23_Handsoldering" H 6500 2625 50  0001 L CIN
 F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 6300 2700 50  0001 L CNN
 F 4 "On Semi" H 6300 2700 50  0001 C CNN "MFG Name"
 F 5 "BCV71" H 6300 2700 50  0001 C CNN "MFG Part Num"
@@ -148,7 +147,7 @@ U 1 1 5E115E4D
 P 6975 2300
 F 0 "Q2" H 7165 2346 50  0000 L CNN
 F 1 "MMBT2907A" H 7165 2255 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7175 2225 50  0001 L CIN
+F 2 "SOT-23-Custom:BCV71_SOT-23_Handsoldering" H 7175 2225 50  0001 L CIN
 F 3 "http://www.onsemi.com/pub_link/Collateral/BC327-D.PDF" H 6975 2300 50  0001 L CNN
 F 4 "Diodes Inc" H 6975 2300 50  0001 C CNN "MFG Name"
 F 5 "MMBT2907A" H 6975 2300 50  0001 C CNN "MFG Part Num"
@@ -362,7 +361,7 @@ U 1 1 5E1C9A60
 P 4800 1950
 F 0 "Q4" H 4990 1996 50  0000 L CNN
 F 1 "MMBT2907A" H 4990 1905 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5000 1875 50  0001 L CIN
+F 2 "SOT-23-Custom:BCV71_SOT-23_Handsoldering" H 5000 1875 50  0001 L CIN
 F 3 "http://www.onsemi.com/pub_link/Collateral/BC327-D.PDF" H 4800 1950 50  0001 L CNN
 	1    4800 1950
 	-1   0    0    1   
@@ -373,7 +372,7 @@ U 1 1 5E114113
 P 6975 1825
 F 0 "Q1" H 7165 1871 50  0000 L CNN
 F 1 "BCV71" H 7165 1780 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7175 1750 50  0001 L CIN
+F 2 "SOT-23-Custom:BCV71_SOT-23_Handsoldering" H 7175 1750 50  0001 L CIN
 F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 6975 1825 50  0001 L CNN
 F 4 "On Semi" H 6975 1825 50  0001 C CNN "MFG Name"
 F 5 "BCV71" H 6975 1825 50  0001 C CNN "MFG Part Num"
@@ -603,7 +602,7 @@ U 1 1 5E313218
 P 4500 2350
 F 0 "Q5" H 4690 2396 50  0000 L CNN
 F 1 "BCV71" H 4690 2305 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4700 2275 50  0001 L CIN
+F 2 "SOT-23-Custom:BCV71_SOT-23_Handsoldering" H 4700 2275 50  0001 L CIN
 F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 4500 2350 50  0001 L CNN
 F 4 "On Semi" H 4500 2350 50  0001 C CNN "MFG Name"
 F 5 "BCV71" H 4500 2350 50  0001 C CNN "MFG Part Num"
@@ -616,7 +615,7 @@ U 1 1 5E392E15
 P 6150 1675
 F 0 "TP1" V 6150 1925 50  0000 C CNN
 F 1 "TestPoint" V 6075 1975 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 6350 1675 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 6350 1675 50  0001 C CNN
 F 3 "~" H 6350 1675 50  0001 C CNN
 F 4 "Keystone" H 6150 1675 50  0001 C CNN "MFG Name"
 F 5 "5015" H 6150 1675 50  0001 C CNN "MFG Part Num"
@@ -891,4 +890,10 @@ Wire Notes Line
 	5000 3125 5000 4725
 Text Notes 6025 4550 0    50   ~ 0
 M-Bus short detection. Comparator outputs 3V3 if input is < -33 V.  D3 lights up. 
+Text Label 7075 1625 0    50   ~ 0
+Q1C
+Text Label 6400 1825 0    50   ~ 0
+Q1B
+Text Label 7075 2100 0    50   ~ 0
+Q1E
 $EndSCHEMATC
