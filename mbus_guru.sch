@@ -68,12 +68,12 @@ $EndComp
 $Comp
 L Device:R_Small R11
 U 1 1 5E11360F
-P 6000 2700
-F 0 "R11" H 6059 2746 50  0000 L CNN
-F 1 "10k 1%" H 6059 2655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6000 2700 50  0001 C CNN
-F 3 "~" H 6000 2700 50  0001 C CNN
-	1    6000 2700
+P 5875 2700
+F 0 "R11" H 5934 2746 50  0000 L CNN
+F 1 "10k 1%" H 5934 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5875 2700 50  0001 C CNN
+F 3 "~" H 5875 2700 50  0001 C CNN
+	1    5875 2700
 	0    1    1    0   
 $EndComp
 $Comp
@@ -537,8 +537,6 @@ Wire Wire Line
 	4875 3225 5525 3225
 Wire Wire Line
 	5525 3225 5525 2700
-Wire Wire Line
-	5525 2700 5900 2700
 Text Label 4275 3225 2    50   ~ 0
 MBUS-TX
 Wire Wire Line
@@ -566,12 +564,12 @@ $EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 5E2C9A38
-P 4300 1600
-F 0 "#PWR0104" H 4300 1350 50  0001 C CNN
-F 1 "GND" V 4305 1472 50  0000 R CNN
-F 2 "" H 4300 1600 50  0001 C CNN
-F 3 "" H 4300 1600 50  0001 C CNN
-	1    4300 1600
+P 4225 1600
+F 0 "#PWR0104" H 4225 1350 50  0001 C CNN
+F 1 "GND" V 4230 1472 50  0000 R CNN
+F 2 "" H 4225 1600 50  0001 C CNN
+F 3 "" H 4225 1600 50  0001 C CNN
+	1    4225 1600
 	0    1    1    0   
 $EndComp
 $Comp
@@ -896,4 +894,49 @@ Text Label 6400 1825 0    50   ~ 0
 Q1B
 Text Label 7075 2100 0    50   ~ 0
 Q1E
+Text Label 7075 2500 0    50   ~ 0
+Q2C
+Text Label 6775 2300 0    50   ~ 0
+Q2B
+Text Label 5000 1950 1    50   ~ 0
+Q4B
+Text Label 4700 2150 0    50   ~ 0
+Q4C
+Text Label 4700 2350 0    50   ~ 0
+Q5B
+Text Label 4400 2150 0    50   ~ 0
+Q5C
+Text Label 6100 2700 1    50   ~ 0
+Q3B
+Wire Wire Line
+	5525 2700 5775 2700
+Wire Wire Line
+	5975 2700 6100 2700
+Text Label 6400 2500 0    50   ~ 0
+Q3C
+$Comp
+L 74xx:74HC14 U1
+U 7 1 5EC5A113
+P 4300 1100
+F 0 "U1" V 3933 1100 50  0000 C CNN
+F 1 "74HC14" V 4024 1100 50  0000 C CNN
+F 2 "" H 4300 1100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 4300 1100 50  0001 C CNN
+	7    4300 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 1100 3800 1525
+Wire Wire Line
+	3800 1525 4225 1525
+Wire Wire Line
+	4225 1525 4225 1600
+Wire Wire Line
+	4225 1600 4300 1600
+Connection ~ 4225 1600
+Wire Wire Line
+	4400 1600 4800 1600
+Wire Wire Line
+	4800 1100 4800 1600
+Connection ~ 4400 1600
 $EndSCHEMATC
